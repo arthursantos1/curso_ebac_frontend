@@ -1,0 +1,26 @@
+body{
+    background-color: #012030;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-link{
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-brand img{
+    width: 200px;
+}
+
+h2{
+    color: #fff;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.397);
+}

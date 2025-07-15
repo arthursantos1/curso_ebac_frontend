@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video: assista a filmes, séries, esportes</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Menu de navegação inicial do site -->
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="./imagens/logo-primevideo.png" alt="Logo prime video">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#filmes" class="nav-link">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Esportes</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input type="search" class="form-control form-control-sm me-2" placeholder="Pesquisar">
+                        <button type="button" class="btn btn-outline-success btn-sm">Pesquisar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Carrousel de imagens de destaque dos filmes -->
+    <div id="carousel-destaque" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Indicadores de qual slide está sendo apresentado -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-destaque" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-destaque" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-destaque" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="7000">
+                <img src="./imagens/sem-remorso.jpg" class="d-block w-100" alt="Capa do filme sem remosso">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Assista agora SEM REMOSSO</h4>
+                    <p>Um fuzileiro naval de elite descobre uma conspiração internacional enquanto busca justiça pelo assassinato de sua esposa grávida.</p>
+                    <a href="#" class="btn btn-secondary">Mais detalhes</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="./imagens/the-boys.jfif" class="d-block w-100" alt="Capa da serie The boys">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>The boys</h4>
+                    <p>A Terra é habitada por super-heróis que são um inspiração para a humanidade. Porém, esses protetores têm um lado sinistro que a maioria das pessoas desconhece.</p>
+                    <p>Se eles usam seus poderes para o mal, Hughie, Billy e o resto do time devem detê-los.</p>
+                    <a href="#" class="btn btn-secondary">Mais detalhes</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="./imagens/nba.png" class="d-block w-100" alt="NBA copa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Acompenhe todos os jogos da NBA</h4>
+                    <p>Agora acompanhe todos os jogos da NBA em qualquer hora ou em qualquer lugar e também assista a reprise de seus jogos favoritos</p>
+                    <a href="#" class="btn btn-secondary">Mais detalhes</a>
+                </div>
+            </div>
+        </div>
+        <!-- Botões para passagem e retorno dos slides -->
+        <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carousel-destaque">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#carousel-destaque">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <section id="filmes" class="mt-5">
+        <div class="container">
+            <h2>Filmes em destaques</h2>
+            <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="./imagens/hobbit.jpg" alt="capa filme hobbit">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab
+                                veritatis amet pariatur qui veniam recusandae in quaerat non, sunt earum nemo! Ea nobis
+                                necessitatibus inventore nisi accusamus voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="./imagens/bailarina.jpg" alt="capa filme bailarina">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab
+                                veritatis amet pariatur qui veniam recusandae in quaerat non, sunt earum nemo! Ea nobis
+                                necessitatibus
+                                inventore nisi accusamus voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="./imagens/maxxine.jpg" alt="capa filme maxxine">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab
+                                veritatis amet pariatur qui veniam recusandae in quaerat non, sunt earum nemo! Ea nobis
+                                necessitatibus
+                                inventore nisi accusamus voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="series" class="mt-5">
+        <div class="container">
+        <h2>Séries em destaques</h2>
+        <div class="row g-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./imagens/capa theboy.jpg" alt="capa the boys">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis amet pariatur qui
+                        veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus inventore nisi accusamus
+                        voluptate.</p>
+                        <a href="#" class="btn btn-primary">Assista o filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./imagens/fleabag.jpg" alt="cartaz fleabag">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis amet pariatur qui
+                            veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus inventore nisi accusamus
+                            voluptate.</p>
+                        <a href="#" class="btn btn-primary">Assista o filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./imagens/gen-v.jpg" alt="cartaz verão passado">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis
+                            amet pariatur qui veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus
+                            inventore nisi accusamus voluptate.</p>
+                        <a href="#" class="btn btn-primary">Assista o filme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="esportes">
+        <div class="container">
+            <h2 class="mt-5">Assistar aos jogos da semana</h2>
+            <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img src="./imagens/cartaz-nba.jpg" alt="cartaz jogo nba">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis amet pariatur
+                                qui veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus inventore nisi
+                                accusamus voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img src="./imagens/spxco.jpg" alt="jogo são paulo x corinthias">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis amet pariatur qui
+                                veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus inventore nisi accusamus
+                                voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img src="./imagens/arsenal-madrid.png" alt="cartaz jogo premier league">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat ab veritatis amet pariatur qui
+                            veniam recusandae in quaerat non, sunt earum nemo! Ea nobis necessitatibus inventore nisi accusamus
+                            voluptate.</p>
+                            <a href="#" class="btn btn-primary">Assista o filme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark mt-5 p-2">
+        <div class="container text-center text-light">
+            <p>&copy; Todos os direitos reservados</p>
+            <p>Projeto desenvolvido para fins educacionais</p>
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
