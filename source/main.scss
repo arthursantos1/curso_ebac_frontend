@@ -1,0 +1,87 @@
+//Chamado os modulos que são utilizados no site
+@use 'reset';
+@use 'variaveis';
+
+body{
+    background-color: variaveis.$corDeFundo;
+}
+//Seção com toda as estilização do header ou nav
+header{
+    background-color: variaveis.$corPrincipal;
+    position: sticky;
+    top: 0;
+    
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 16px 0;
+
+        .branding{
+            margin-left: 24px;
+        }
+
+        .menu {
+            display: flex;
+        
+            li {
+                margin-right: 24px;
+                font-weight: bold;
+                list-style: none;
+                color: variaveis.$corTexto;
+            }
+        }
+    }
+}
+//Seção que foi estilizado o corpo onde será apresentando os produtos
+section{
+    padding: 56px 0;
+
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        h2{
+            font-weight: bold;
+        }
+
+        .produtos{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 32%);
+            column-gap: 2%;
+            row-gap: 4%;
+            list-style: none;
+            width: 100%;
+
+            img{
+                width: 100%;
+                margin-bottom: 8px;
+            }
+
+            h4{
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            .produto-buttom{
+                display: block;
+                background-color: variaveis.$corDoBotao;
+                color: variaveis.$corTexto;
+                text-align: center;
+                padding: 8px 0;
+                border-radius: 8px;
+                text-decoration: none;
+                margin-top: 8px;
+
+                &:hover{
+                    background-color: darken(variaveis.$corDoBotao, 15%);
+                }
+            }
+        }
+    }
+}
