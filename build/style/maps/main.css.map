@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","D:/Curso%20Ebac/gulp/source/style/variaveis.scss"],"names":[],"mappings":"AAEA;EACI,kBCHS","sourcesContent":["@use 'variaveis';\r\n\r\nbody {\r\n    background-color: variaveis.$corDeFundo;\r\n}","$corDeFundo: rgb(16, 218, 123);"],"file":"../main.css"}
