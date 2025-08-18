@@ -1,0 +1,122 @@
+@fontePrincipal: Roboto, sans-serif;
+@fonteCabecalho: "Edu NSW ACT Cursive", cursive;
+@corFundo: #60a3bc;
+@corCabecalho: #0a3d62;
+@corDoTexto: #fff;
+@corDoBotao: #27ae60;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: @fontePrincipal;
+}
+
+body{
+    background-color: @corFundo;
+}
+
+header{
+    background-color: @corCabecalho;
+    padding: 18px 0;
+    color: @corDoTexto;
+    position: sticky;
+    top: 0;
+
+    .container{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-size: 1.5em;
+            font-family: @fonteCabecalho;
+            font-weight: bold;
+        }
+
+        .menu{
+            display: flex;
+
+            li{
+                list-style: none;
+                margin-right: 18px;
+
+                a{
+                    text-decoration: none;
+                    color: @corDoTexto;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .container{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        padding-top: 150px;
+        color: @corDoTexto;
+
+        h1{
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        form{
+            max-width: 500px;
+            margin: 0 auto;
+
+            input{
+                display: block;
+                width: 100%;
+                margin-top: 30px;
+                border-radius: 5px;
+                border: none;
+                text-align: center;
+                padding: 8px;
+            }
+
+            button{
+                width: 100%;
+                margin-top: 35px;
+                border-radius: 8px;
+                padding: 12px;
+                border: none;
+                background-color: @corDoBotao;
+                color: @corDoTexto;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: darken(@corDoBotao, 15%);
+                }
+            }
+        }
+
+        .resultado{
+            display: none;
+            border: 2px dotted @corDoTexto;
+            margin-top: 50px;
+            padding: 18px 0;
+        }
+    }
+}
+
+footer{
+    background-color: @corCabecalho;
+
+    .container{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        color: @corDoTexto;
+        text-align: center;
+        padding: 16px 0;
+    }
+}
