@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const messageError = document.getElementById('erro-message');
 
     /* Utilizando a API do Github e preenchendo os dados com AJAX */
-    fetch('https://api.github.com/users/arthursantos1/')
+    fetch('https://api.github.com/users/arthursantos1')
         .then(function (resposta) {
             return resposta.json();
         })
@@ -23,4 +23,5 @@ document.addEventListener('DOMContentLoaded', function () {
             following.innerText = json.following;
             profile.href = json.html_url;
         })
+
 })
